@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Pernikahan - LUSIANO & BUNGA</title>
+  <link rel="stylesheet" href="gaya.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- INTRO SLIDE -->
+  <div class="slide intro-slide active">
+    <div class="intro-content">
+      <h1 class="intro-title">Undangan Pernikahan</h1>
+      <p class="intro-names">Lusiano & Bunga</p>
+      <button class="open-button" onclick="startInvitation()">💌 Buka Undangan</button>
+    </div>
+  </div>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgm" loop>
+    <source src="sound.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- SLIDER CONTAINER -->
+  <div class="slider-container">
+
+    <!-- SLIDE 1: Pembukaan -->
+    <div class="slide">
+      <img src="img/bungakiri.png" class="flower flower-top-left" alt="Dekorasi bunga kiri atas" />
+      <img src="img/bungakanan.png" class="flower flower-bottom-right" alt="Dekorasi bunga kanan bawah" />
+      <img src="img/bungabawah.png" class="flower flower-bottom-left" alt="Dekorasi bunga kiri bawah" />
+      <img src="img/bungaatas.png" class="flower flower-top-right" alt="Dekorasi bunga kanan atas" />
+
+      <img src="img/berduafit.jpg" alt="Foto Pasangan" class="slide-photo" />
+
+      <h1 class="title-1">Undangan Pernikahan</h1>
+      <img src="img/arab1.png" alt="Ornamen kaligrafi" class="ornament-image" />
+
+      <p class="title-2">
+        Kepada yang terhormat Bapak/Ibu di Tempat
+        <br />Dengan penuh rasa syukur, kami bermaksud mengundang
+        <br /><br />Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami
+        <br /><br />Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+        <br />Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.
+      </p>
+    </div>
+
+    <!-- SLIDE 2: Tanggal & Lokasi -->
+    <div class="slide">
+      <img src="img/bungakiri.png" class="flower flower-top-left" alt="Dekorasi bunga kiri atas" />
+      <img src="img/bulatankanan.png" class="flower flower-bottom-right" alt="Dekorasi bunga kanan bawah" />
+      <img src="img/bulatankiri.png" class="flower flower-bottom-left" alt="Dekorasi bunga kiri bawah" />
+      <img src="img/bungaatas.png" class="flower flower-top-right" alt="Dekorasi bunga kanan atas" />
+
+      <h2 class="title-1">Lusiano & Bunga</h2>
+
+      <div class="title-2">
+        <p class="date">Minggu, 04 Januari 2026</p>
+        <p>Pukul 10.00 WIB - selesai</p>
+        <p>Lokasi: Perum Venezia Residence Blok C 5 No. 5 <br> Dayeuh Kec. Cileungsi - Bogor <br>(Lokasi Acara Di Lapangan Bulutangkis)</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: Profil Pengantin Pria -->
+    <div class="slide">
+      <img src="img/bungakiri.png" class="flower flower-top-left" alt="Dekorasi bunga kiri atas" />
+      <img src="img/bungakanan.png" class="flower flower-bottom-right" alt="Dekorasi bunga kanan bawah" />
+      <img src="img/bungabawah.png" class="flower flower-bottom-left" alt="Dekorasi bunga kiri bawah" />
+      <img src="img/bungaatas.png" class="flower flower-top-right" alt="Dekorasi bunga kanan atas" />
+
+      <h3 class="title-1">Profil Pengantin Pria</h3>
+      <img src="img/lusiano.jpg" alt="Foto Lusiano" class="slide-photo" />
+
+      <div class="title-2">
+        <p><strong>Lusiano</strong></p>
+        <p><strong>Putra dari</strong> Almarhum Bapak Darsinih & Ibu Sureni</p>
+        <p><strong>Anak ke</strong> 4 dari 4 bersaudara</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: Profil Pengantin Wanita -->
+    <div class="slide">
+      <img src="img/bungakiri.png" class="flower flower-top-left" alt="Dekorasi bunga kiri atas" />
+      <img src="img/bungakanan.png" class="flower flower-bottom-right" alt="Dekorasi bunga kanan bawah" />
+      <img src="img/bungabawah.png" class="flower flower-bottom-left" alt="Dekorasi bunga kiri bawah" />
+      <img src="img/bungaatas.png" class="flower flower-top-right" alt="Dekorasi bunga kanan atas" />
+
+      <h3 class="title-1">Profil Pengantin Wanita</h3>
+      <img src="img/bunga.jpg" alt="Foto Bunga" class="slide-photo" />
+
+      <div class="title-2">
+        <p><strong>Bunga Azkya Kusuma Ningrum</strong></p>
+        <p><strong>Putri dari</strong> Bapak Supriyanto & Ibu Sumiyati</p>
+        <p><strong>Anak ke</strong> 4 dari 4 bersaudara</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 5: Rangkaian Acara -->
+    <div class="slide">
+      <img src="img/bungakiri.png" class="flower flower-top-left" alt="Dekorasi bunga kiri atas" />
+      <img src="img/bulatankanan.png" class="flower flower-bottom-right" alt="Dekorasi bunga kanan bawah" />
+      <img src="img/bulatankiri.png" class="flower flower-bottom-left" alt="Dekorasi bunga kiri bawah" />
+      <img src="img/bungaatas.png" class="flower flower-top-right" alt="Dekorasi bunga kanan atas" />
+
+      <h3 class="title-1">Rangkaian Acara</h3>
+
+        <div class="title-2">
+        <p>💍 Akad Nikah: Telah Dilaksanakan Pada Tanggal 5 Desember 2025 Di KUA Cileungsi</p>
+        <p>🍽 Resepsi: 11.00 - 17-00 WIB</p>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: Hadiah Pernikahan -->
+    <div class="slide">
+      <img src="img/bungakiri.png" class="flower flower-top-left" alt="Dekorasi bunga kiri atas" />
+      <img src="img/bulatankanan.png" class="flower flower-bottom-right" alt="Dekorasi bunga kanan bawah" />
+      <img src="img/bulatankiri.png" class="flower flower-bottom-left" alt="Dekorasi bunga kiri bawah" />
+      <img src="img/bungaatas.png" class="flower flower-top-right" alt="Dekorasi bunga kanan atas" />
+
+      <h3 class="title-1">Lokasi Acara</h3>
+
+        <div class="title-2">
+          <img src="img/lokasi.png" alt="Lokasi" class="slide-Lokasi" />
+        </div>
+        <p class="footer">LUSIANO & BUNGA © 2025</p>
+    </div>
+
+    <!-- SLIDE 7: Doa & Restu -->
+    <div class="slide">
+      <img src="img/bungakiri.png" class="flower flower-top-left" alt="Dekorasi bunga kiri atas" />
+      <img src="img/bulatankanan.png" class="flower flower-bottom-right" alt="Dekorasi bunga kanan bawah" />
+      <img src="img/bulatankiri.png" class="flower flower-bottom-left" alt="Dekorasi bunga kiri bawah" />
+      <img src="img/bungaatas.png" class="flower flower-top-right" alt="Dekorasi bunga kanan atas" />
+
+      <h3 class="title-1">Doa & Restu Anda</h3>
+
+      <div class="title-2">
+        <p> Dengan segala kerendahan hati, izinkan kami mengundang Bapak/Ibu/Saudara/i
+          <br> untuk hadir dan memberikan doa restu pada hari bahagia kami</p>
+        <p>kehadiran dan doa tulus dari Anda menjadi berkah bagi langkah awal kami dalam membangun rumah tangga penuh cinta dan kebahagiaan</p>
+        <p> Atas kehadiran dan doa restunya, kami ucapkan terima kasih</p>
+      </div>
+      <p class="footer">LUSIANO & BUNGA © 2025</p>
+    </div>
+
+    <!-- Slide Countdown -->
+    <div class="slide">
+      <h1 class="title-1">Menuju Hari Bahagia</h1>
+      
+      <p class="title-2">Acara akan dimulai dalam:</p>
+
+      <div id="countdown" class="title-2">
+        <div><span id="days">00</span><small>Hari</small></div>
+        <div><span id="hours">00</span><small>Jam</small></div>
+        <div><span id="minutes">00</span><small>Menit</small></div>
+        <div><span id="seconds">00</span><small>Detik</small></div>
+      </div>
+    </div>
+
+    <!-- NAVIGATION BUTTONS -->
+    <div class="nav-buttons">
+      <button onclick="prevSlide()">❮ Sebelumnya</button>
+      <button onclick="nextSlide()">Selanjutnya ❯</button>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
